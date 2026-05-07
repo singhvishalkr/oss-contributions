@@ -1,23 +1,55 @@
-# Open-source contribution index
+# Open-source contribution map
 
-This repository is a **curated index**, not a second home for code. It groups pull requests and themes I have pushed across upstream projects so maintainers and readers can see scope without digging through my GitHub activity feed.
+This repository stores the **same contribution facts** that used to live inline in my profile README: where the work landed, and what kind of change it was. Numbers below are **cumulative** (merged, open, and closed PRs over several years). For canonical issue links, follow through to each upstream PR.
 
-## What you will find
+## Scale
 
-- **JVM and data infrastructure**  -  runtimes, brokers, and integration paths I use in day jobs (Pulsar, Camunda, Pinot, Confluent ecosystem, Quarkus, Spring).
-- **CNCF and platform docs**  -  small, reviewable changes to websites and tools where clarity for operators matters.
-- **Product and framework docs**  -  Strapi, and similar projects where the fix is often a sentence in the right place, not a new feature.
+- **100+** pull requests authored as **[@singhvishalkr](https://github.com/singhvishalkr)**
+- **25+** distinct upstream repositories
 
-I treat upstream work the same way as internal platform work: minimal diffs, explicit motivation, and tests or docs that match the project’s bar. Branches and releases move fast; the point of this list is to show *where* the work landed, not to score it.
+## JVM runtimes, messaging, and workflows
 
-## How the list is organized
+| Project | What shipped (representative) |
+| --- | --- |
+| **Apache Pulsar** | Broker logging fix **[#25558](https://github.com/apache/pulsar/pull/25558)** backported across **4.0.x / 4.1.x / 4.2.x**; admin/docs **[#25556](https://github.com/apache/pulsar/pull/25556)**; **10** merged PRs on **[apache/pulsar-site](https://github.com/apache/pulsar-site)** |
+| **Confluent Parallel Consumer** | Logging and state-handling fixes |
+| **Apache Pinot** | Contributor |
+| **Quarkus** | **[#53988](https://github.com/quarkusio/quarkus/pull/53988)** merged — OIDC providers guide |
+| **Camunda / Zeebe** | Broker health detail, BPMN validation, Java client plaintext warning, search-layer debug logging, docs |
+| **Spring Security** | **[#19143](https://github.com/spring-projects/spring-security/pull/19143)** — CORS Javadoc clarification *(open)* |
 
-The default layout is by **ecosystem** (JVM, docs, CNCF, client libraries), with each entry pointing to the upstream PR or issue. When a change was backported across release lines, that is noted once instead of duplicating five links.
+## CNCF and platform documentation
 
-## Relationship to my profile
+| Project | Notes |
+| --- | --- |
+| **kubernetes/website** | Docs fixes (e.g. redirects to **pkg.go.dev**, certificate front-proxy notes, Hindi localization tracks) |
+| **lima-vm/lima** | Merged contribution |
+| **linkerd/website** | Hugo redirect for `/reference` |
+| **meshery/meshery** | UI / docs contributions |
 
-My GitHub profile README links here for anyone who wants the full map. Day-to-day work at MakeMyTrip stays in private orgs; this page is the public half of the same habit: ship small, reviewable improvements where the community maintains the code.
+## Libraries, SDKs, and developer tools
 
-## Contact
+| Project | Notes |
+| --- | --- |
+| **LlamaIndex** | **[#21431](https://github.com/run-llama/llama_index/pull/21431)** merged — OpenSearch metadata filter examples |
+| **PostHog** | Documentation fixes across **posthog.com** |
+| **Mattermost** | Web client notification tagging / security-sensitive handling |
+| **Appwrite** | Console fixes |
+| **Gatsby** | `gatsby-source-filesystem` null guard |
+| **Promptfoo** | Red-team UI labelling |
+| **Kilo-Org / kilocode** | Documentation structure and CLI paths |
+| **DagsHub** | Python client docstrings and upload helpers |
+| **questdb** | SQL parser error pointer fix |
+| **kongctl** | Kong CLI resource support |
+| **airbyte** | Connector stream work |
 
-For collaboration on a specific project, use that project’s issue tracker. For everything else: **vishal.kr.singh2021@gmail.com** or [LinkedIn](https://www.linkedin.com/in/singhvishalkr/).
+## CMS, commerce, and framework docs
+
+| Project | Notes |
+| --- | --- |
+| **Strapi** | **[strapi/strapi](https://github.com/strapi/strapi)** and **[strapi/documentation](https://github.com/strapi/documentation)** — documentation program work (controllers, plugins, transfer, testing, TypeScript plugin notes, and related) |
+| **Bagisto** | Laravel commerce fixes (checkout, discounts, invoices, and related) |
+
+## Profile
+
+Main GitHub profile: **[github.com/singhvishalkr](https://github.com/singhvishalkr)** · Writing: **[Medium](https://medium.com/@vishal.kr.singh)**
